@@ -1,4 +1,4 @@
-=== Add to Cart Redirect for WooCommerce ===
+=== Add to Cart Redirect Link for WooCommerce ===
 Contributors: ikamal
 Tags: add to cart redirect, redirect, redirect to checkout, redirect to page, redirect to page product
 Requires at least: 5.0

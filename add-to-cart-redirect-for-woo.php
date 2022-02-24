@@ -1,6 +1,6 @@
 <?php
 	/**
-	 * Plugin Name:  Add to Cart Redirect for WooCommerce
+	 * Plugin Name:  Add to Cart Redirect Link for WooCommerce
 	 * Plugin URI:   https://github.com/ikamal7/add-to-cart-redirect-for-wc
 	 * Description:  Redirect to checkout page or any other page after successfully product added to cart.
 	 * Version:      1.0.0
