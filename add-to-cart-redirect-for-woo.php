@@ -7,11 +7,11 @@
 	 * Author:       Kamal Hosen
 	 * Text Domain:  woo-add-to-cart-redirect
 	 * Requires at least: 5.0
-	 * Tested up to: 5.9
+	 * Tested up to: 6.0
 	 * WC requires at least: 2.7
-	 * WC tested up to: 6.2.1
+	 * WC tested up to: 6.9.3
 	 * Domain Path:  /languages
-	 * Author URI:   https://kamalhosen8920/
+	 * Author URI:   https://kamalhosen.me/
 	 * License:      GPLv3
 	 * License URI:  http://www.gnu.org/licenses/gpl-3.0.html
 	 */
@@ -22,7 +22,7 @@
 		
 		final class Add_Cart_Redirect_Woo {
 			
-			protected $_version = '2.0.2';
+			protected $_version = '1.0.0';
 			
 			protected static $_instance = null;
 			
@@ -75,7 +75,7 @@
 				
 				// add_action( 'admin_notices', array( $this, 'feed' ) );
 				// Plugin Row Meta
-				add_filter( 'plugin_action_links_' . WOO_ATCR_BASENAME, array( $this, 'plugin_action_links' ) );
+				// add_filter( 'plugin_action_links_' . WOO_ATCR_BASENAME, array( $this, 'plugin_action_links' ) );
 				
 				// add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 2 );
 			}
@@ -118,7 +118,7 @@
 				$new_links[ 'settings' ] = sprintf( '<a href="%1$s" title="%2$s">%2$s</a>', $settings_link, esc_attr__( 'Settings', 'woo-add-to-cart-redirect' ) );
 				
 				if ( ! class_exists( 'Add_Cart_Redirect_Woo_Pro' ) ):
-					$pro_link = esc_url( add_query_arg( array( 'utm_source' => 'wp-admin-plugins', 'utm_medium' => 'go-pro', 'utm_campaign' => 'woo-add-to-cart-redirect' ), 'https://getwooplugins.com/plugins/woocommerce-add-to-cart-redirect/' ) );
+					$pro_link = esc_url( add_query_arg( array( 'utm_source' => 'wp-admin-plugins', 'utm_medium' => 'go-pro', 'utm_campaign' => 'woo-add-to-cart-redirect' ), '' ) );
 					
 					$new_links[ 'go-pro' ] = sprintf( '<a target="_blank" style="color: #45b450; font-weight: bold;" href="%1$s" title="%2$s">%2$s</a>', $pro_link, esc_attr__( 'Go Pro', 'woo-add-to-cart-redirect' ) );
 				endif;
