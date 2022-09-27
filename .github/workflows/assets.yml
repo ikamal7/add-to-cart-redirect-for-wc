@@ -1,4 +1,4 @@
-name: Deploy to WordPress.org
+name: Deploy Assets to WordPress.org
 
 on:
   push:
@@ -15,3 +15,4 @@ jobs:
         env:
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SLUG: add-to-cart-redirect-link-for-woocommerce
